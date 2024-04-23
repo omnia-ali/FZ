@@ -1,0 +1,17 @@
+.search-input {
+   
+
+    &::placeholder {
+
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: black
+    }
+
+    &:focus {
+       
+        box-shadow: none
+    }
+}

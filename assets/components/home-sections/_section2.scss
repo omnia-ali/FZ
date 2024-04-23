@@ -1,0 +1,143 @@
+.right-sec {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 50%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  .fz-image {
+    // position: relative;
+    mix-blend-mode: color-burn;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 9px 24px 0px #58567e80;
+    border-radius: 6px;
+    &::after {
+      //position: absolute;
+      content: '';
+      display: block;
+
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 6px;
+
+      //  background-color: #58567e80;
+      background: linear-gradient(180deg, rgba(9, 9, 10, 0) 0%, #39312d 100%);
+    }
+  }
+  .fz-image:nth-child(4) {
+    width: 113.08px;
+    height: 138.74px;
+    background-image: url(../assets/Images/Home/FZ-imgs/r-1.png);
+   // background-image: url(http://localhost:8080/documents/d/fz-test/r-1);
+
+    z-index: 0;
+    &::after {
+    }
+  }
+  .fz-image:nth-child(3) {
+    width: 93.86px;
+    height: 115.17px;
+    background-image: url(../assets/Images/Home/FZ-imgs/r-2.png);
+    //background-image: url(http://localhost:8080/documents/d/fz-test/r-2);
+    margin-right: -15%;
+
+    &::after {
+    }
+  }
+  .fz-image:nth-child(2) {
+    width: 57.19px;
+    height: 70.17px;
+    background-image: url(../assets/Images/Home/FZ-imgs/r-3.png);
+    //background-image: url(http://localhost:8080/documents/d/fz-test/r-3);
+    margin-right: 5%;
+
+    &::after {
+    }
+  }
+  .fz-image:nth-child(1) {
+    width: 44.44px;
+    height: 54.53px;
+    background-image: url(../assets/Images/Home/FZ-imgs/r-4.png);
+   // background-image: url(http://localhost:8080/documents/d/fz-test/r-4);
+    margin-right: 20%;
+
+    &::after {
+    }
+  }
+}
+.left-sec {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 50%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  .fz-image {
+    // position: relative;
+    mix-blend-mode: color-burn;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 9px 24px 0px #58567e80;
+    border-radius: 6px;
+    &::after {
+      //position: absolute;
+      content: '';
+      display: block;
+
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 6px;
+
+      //  background-color: #58567e80;
+      background: linear-gradient(180deg, rgba(9, 9, 10, 0) 0%, #39312d 100%);
+    }
+  }
+  .fz-image:nth-child(4) {
+    width: 113.08px;
+    height: 138.74px;
+    background-image: url(../assets/Images/Home/FZ-imgs/l-1.png);
+    //background-image: url(http://localhost:8080/documents/d/fz-test/l-1);
+
+    z-index: 0;
+  }
+  .fz-image:nth-child(3) {
+    width: 93.86px;
+    height: 115.17px;
+    background-image: url(../assets/Images/Home/FZ-imgs/l-2.png);
+   // background-image: url(http://localhost:8080/documents/d/fz-test/l-2);
+
+    margin-left: -15%;
+  }
+  .fz-image:nth-child(2) {
+    width: 57.19px;
+    height: 70.17px;
+        background-image: url(../assets/Images/Home/FZ-imgs/l-3.png);
+   // background-image: url(http://localhost:8080/documents/d/fz-test/l-3);
+
+    margin-left: 5%;
+  }
+  .fz-image:nth-child(1) {
+    width: 44.44px;
+    height: 54.53px;
+     background-image: url(../assets/Images/Home/FZ-imgs/l-4.png);
+   // background-image: url(http://localhost:8080/documents/d/fz-test/l-4);
+
+    z-index: 0;
+    margin-left: 20%;
+  }
+}

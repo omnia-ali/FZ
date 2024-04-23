@@ -1,0 +1,102 @@
+.circle-dots {
+    .circle {
+        background-color: white;
+        position: absolute;
+        animation: animate 10s linear infinite;
+        bottom: -180px;
+
+        &.circle-dot-1 {
+            width: 20.5px;
+            height: 20.5px;
+
+            left: 15%;
+            border-radius: 50%;
+            animation-delay: 0.4s;
+        }
+
+        &.circle-dot-2 {
+            width: 20.5px;
+            height: 20.5px;
+
+            left: 7%;
+            gap: 0px;
+            opacity: 0px;
+            border-radius: 50%;
+            animation-delay: 2s;
+        }
+
+        &.circle-dot-3 {
+            width: 12.5px;
+            height: 12.5px;
+
+            left: 8%;
+            border-radius: 50%;
+            animation-delay: 3s;
+        }
+
+        &.circle-dot-4 {
+            width: 12.5px;
+            height: 12.5px;
+
+            left: 5%;
+
+            border-radius: 50%;
+            animation-delay: 3.5s;
+        }
+
+        &.circle-dot-5 {
+            width: 20.5px;
+            height: 20.5px;
+
+            right: 9%;
+            border-radius: 50%;
+            animation-delay: 5s;
+        }
+
+        &.circle-dot-6 {
+            width: 12.5px;
+            height: 12.5px;
+
+            right: 0%;
+
+            border-radius: 50%;
+            animation-delay: 2.5s;
+        }
+
+        &.circle-dot-7 {
+            width: 20.5px;
+            height: 20.5px;
+
+            right: -3%;
+            border-radius: 50%;
+            animation-delay: 3.6s;
+        }
+
+        &.circle-dot-8 {
+            width: 20.5px;
+            height: 20.5px;
+
+            right: 4%;
+
+            border-radius: 50%;
+            animation-delay: 4s;
+        }
+
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+}

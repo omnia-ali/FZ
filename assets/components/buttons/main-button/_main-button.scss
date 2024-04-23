@@ -1,0 +1,85 @@
+.main-button {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.59px;
+  text-align: center;
+  width: 173px;
+  height: 48px;
+  &.top-80 {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*************************buttons*************************/
+
+.btn {
+  border-radius: 25px;
+  min-width: 120px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.59px;
+  &:not(.dropdown-toggle) {
+    padding: 15px 10px;
+  }
+
+  &.btn-primary {
+    background: white;
+
+    color: black;
+    border-radius: 25px;
+    min-width: 120px;
+    border-color: #ffffff;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.59px;
+    &:not(.dropdown-toggle) {
+      padding: 15px 10px;
+    }
+    &:hover,
+    &:active,
+    &:checked,
+    &:focus-visible {
+      background: black !important;
+      border-color: black;
+      color: white;
+    }
+  }
+  &.btn-secondary {
+    background-color: black !important;
+
+    color: white;
+    border-radius: 25px;
+    min-width: 120px;
+    border-color: black;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.59px;
+    &:not(.dropdown-toggle) {
+      padding: 15px 10px;
+    }
+    &:hover,
+    &:active,
+    &:checked,
+    &:focus-visible {
+      background: white !important;
+      border-color: white;
+      color: black;
+    }
+  }
+}
+.rounded-circle {
+  border-radius: 50%;
+  background-color: white;
+  // padding: 5px;
+}
+
+.scroll-btn {
+  cursor: pointer;
+  width: 19.16px;
+  height: 34px;
+}

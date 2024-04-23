@@ -1,0 +1,106 @@
+.slider-container {
+  // background-image: linear-gradient(to top right, #8b5cf6, #ec4899);
+  //background-image: url('../../Images/Home/Home.svg');
+
+  //min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  z-index: 0;
+  height: 65vh;
+
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .item {
+    position: absolute;
+    width: 290px;
+
+    height: 50vh;
+    overflow: hidden;
+    text-align: justify;
+    // background-color: #fff;
+
+    border-radius: 10px;
+
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+    line-height: unset !important;
+    letter-spacing: unset !important;
+    font-family: 'Rubik' !important;
+    background-position: center;
+    background-size: cover;
+    &::after {
+      content: '';
+      background: linear-gradient(180deg, rgba(9, 9, 10, 0) 0%, #39312d 100%);
+      width: 100%;
+      height: 100%;
+    }
+    .slider-logo {
+      position: absolute;
+      bottom: 25%;
+    }
+    &:not(.active) .slider-logo {
+      display: none;
+    }
+    .slider-title {
+      color: #ffffff;
+      position: absolute;
+      bottom: 10%;
+      font-size: 24px;
+    }
+    &:nth-child(1) {
+      background-image: url(../../../assets/Images/Home/slider-imgs/1.png);
+    }
+    &:nth-child(2) {
+      background-image: url(../../../assets/Images/Home/slider-imgs/2.png);
+    }
+    &:nth-child(3) {
+      background-image: url(../../../assets/Images/Home/slider-imgs/3.png);
+    }
+    &:nth-child(4) {
+      background-image: url(../../../assets/Images/Home/slider-imgs/4.png);
+    }
+    &:nth-child(5) {
+      background-image: url(../../../assets/Images/Home/slider-imgs/5.png);
+    }
+  }
+  .slider-explore {
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+  }
+  // #next,
+  // #prev,
+  // #slider-info {
+  //   position: absolute;
+  //   bottom: -2%;
+
+  //   background-color: transparent;
+  //   border: none;
+  //   font-family: monospace;
+  //   font-weight: bold;
+
+  //   right: 20%;
+  // }
+
+  // #next {
+  //   left: unset;
+
+  //   right: 15%;
+  // }
+
+  // #slider-info {
+  //   left: 20%;
+  //   right: unset;
+  // }
+}

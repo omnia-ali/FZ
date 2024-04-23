@@ -1,0 +1,215 @@
+.news-slider-container,
+.companies-slider-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  z-index: 0;
+  height: 75vh;
+  position: relative;
+  margin-bottom: 1%;
+
+  .companies-slider,
+  .news-slider {
+    position: relative;
+    height: 90%;
+    // width: 100%;
+    //height: 65vh;
+    overflow: hidden;
+    z-index: 1;
+    width: 100vw;
+  }
+
+  .companies-slider .item {
+    position: absolute;
+    width: 773.28px;
+    height: 55vh;
+    overflow: hidden;
+    text-align: justify;
+    border-radius: 10px;
+
+    transition: 0.5s;
+    left: calc(50%);
+    top: 0;
+    line-height: unset !important;
+    letter-spacing: unset !important;
+    font-family: 'Rubik' !important;
+    background-position: center;
+    background-size: cover;
+    &::after {
+      background: #00000099;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+    }
+    &:not(.active) .companies-slider-details {
+      display: none;
+    }
+    .companies-slider-details {
+      color: #ffffff;
+      height: 20%;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      margin: 3rem;
+      gap: 3rem;
+      align-items: center;
+      img {
+        border-radius: 50%;
+      }
+      .name-header {
+        font-size: 32px;
+      }
+      .sub-title {
+        font-size: 20px;
+      }
+    }
+    background-position: center;
+
+    &:nth-child(1) {
+      background: url(../../../assets/Images/Home/testmonial-imgs/1.png) top/
+        cover no-repeat;
+    }
+    &:nth-child(2) {
+      background: url(../../../assets/Images/Home/testmonial-imgs/2.png) top/
+        cover no-repeat;
+    }
+    &:nth-child(3) {
+      background: url(../../../assets/Images/Home/testmonial-imgs/3.png) top/
+        cover no-repeat;
+    }
+    &:nth-child(4) {
+      background: url(../../../assets/Images/Home/testmonial-imgs/4.png) center/
+        cover no-repeat;
+    }
+    &:nth-child(5) {
+      background: url(../../../assets/Images/Home/slider-imgs/5.png) center/
+        cover no-repeat;
+    }
+    &.active {
+      background-size: cover;
+    }
+
+    &:not(.active) {
+      background-size: contain;
+    }
+  }
+  .news-slider .item {
+    position: absolute;
+    width: 388.86px;
+
+    height: 55vh;
+    overflow: hidden;
+    text-align: justify;
+    // background-color: #fff;
+
+    border-radius: 10px;
+
+    padding: 20px;
+    transition: 0.5s;
+    //left: calc(50% - 437.5px);
+    left: calc(50%);
+    top: 0;
+    line-height: unset !important;
+    letter-spacing: unset !important;
+    font-family: 'Rubik' !important;
+    background-position: center;
+    background-size: cover;
+    &::after {
+      content: '';
+      background: linear-gradient(180deg, rgba(9, 9, 10, 0) 0%, #39312d 100%);
+      width: 100%;
+      height: 100%;
+    }
+
+    .news-slider-title {
+      color: #ffffff;
+      position: absolute;
+      bottom: 10%;
+    }
+  }
+  #next,
+  #prev,
+  #companies-slider-info {
+    position: absolute;
+    bottom: 5%;
+
+    background-color: transparent;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+
+    right: 25%;
+  }
+  #perv,
+  #next {
+    background-color: white;
+  }
+  #prev {
+    &:after {
+      content: '\f053';
+      font-family: 'Font Awesome 6 Pro';
+    }
+  }
+  #next {
+    left: unset;
+
+    right: 15%;
+    &:after {
+      content: '\f054';
+      font-family: 'Font Awesome 6 Pro';
+    }
+  }
+}
+
+.companies-slider-container,
+.slider-container {
+  #companies-slider-info,
+  #slider-info {
+    font-size: xx-large;
+    right: unset;
+    left: 25%;
+    right: unset;
+  }
+  #next,
+  #prev,
+  #companies-slider-info,
+  #slider-info {
+    position: absolute;
+    bottom: 0;
+
+    background-color: transparent;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+
+    right: unset;
+  }
+
+  #prev,
+  #next {
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    right: 30%;
+  }
+  #prev {
+    &:after {
+      content: '\f053';
+      font-family: 'Font Awesome 6 Pro';
+    }
+  }
+  #next {
+    left: unset;
+
+    right: 25%;
+    &:after {
+      content: '\f054';
+      font-family: 'Font Awesome 6 Pro';
+    }
+  }
+}

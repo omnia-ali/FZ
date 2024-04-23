@@ -1,0 +1,31 @@
+.icon-bottom-rotate {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    bottom: 55px;
+    right: 48px;
+    z-index: 44;
+
+    img {
+        width: 80% !important;
+        animation: rotate-icon 5s infinite linear;
+    }
+
+}
+
+@keyframes rotate-icon {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}

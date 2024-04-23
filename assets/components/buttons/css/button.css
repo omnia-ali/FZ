@@ -1,0 +1,52 @@
+/*************************buttons*************************/
+.btn {
+  border-radius: 25px;
+  min-width: 120px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.59px;
+}
+.btn:not(.dropdown-toggle) {
+  padding: 15px 10px;
+}
+.btn.btn-primary {
+  background: white;
+  color: black;
+  border-radius: 25px;
+  min-width: 120px;
+  border-color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.59px;
+}
+.btn.btn-primary:not(.dropdown-toggle) {
+  padding: 15px 10px;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:checked, .btn.btn-primary:focus-visible {
+  background: black !important;
+  border-color: black;
+  color: white;
+}
+.btn.btn-secondary {
+  background-color: black !important;
+  color: white;
+  border-radius: 25px;
+  min-width: 120px;
+  border-color: black;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.59px;
+}
+.btn.btn-secondary:not(.dropdown-toggle) {
+  padding: 15px 10px;
+}
+.btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:checked, .btn.btn-secondary:focus-visible {
+  background: white !important;
+  border-color: white;
+  color: black;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  background-color: white;
+}/*# sourceMappingURL=button.css.map */

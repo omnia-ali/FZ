@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website | Codehal</title>
+    <link rel="stylesheet" href="./assets/style3 copy.css">
+</head>
+
+<body>
+    <section class="parallax">
+        <h2 id="text">Home </h2>
+        <img src="./assets/Images/test3/gate-left.png" id="gate-left" alt="">
+        <img src="./assets/Images/test3/gate-right.png" id="gate-right" alt="">
+        <img src="./assets/Images/test3/tree-left.png" id="tree-left" alt="">
+        <img src="./assets/Images/test3/tree-right.png" id="tree-right" alt="">
+        <img src="./assets/Images/test3/grass.png" id="grass" alt="">
+    </section>
+    <scetion class="sec">
+        <h2>sec header</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus repellat architecto quod
+            distinctio, incidunt deleniti molestiae accusantium est sit sapiente, vitae velit. Illo autem, aperiam a
+            magnam velit amet, consequatur nihil quas ipsa corporis tenetur optio? Nulla praesentium eaque est totam
+            cupiditate quidem consequuntur illum enim earum laudantium modi facilis sed assumenda quod error illo nemo
+            expedita porro ex sequi cumque, quo velit repellat maiores. Fuga eveniet dolorum dolor reiciendis iusto,
+            natus odit soluta animi in, eaque consequatur nostrum repellat rem doloremque veniam illum tempora
+            laudantium autem culpa, laborum architecto cupiditate velit aspernatur quos! Fugit magnam veniam aspernatur
+            ducimus quos nesciunt recusandae suscipit adipisci. Error explicabo illo iste ipsam quidem et exercitationem
+            accusantium culpa incidunt ipsa. Quis culpa at voluptatem blanditiis voluptates veniam est, similique,
+            repudiandae dolorum, minima sapiente dicta! Eos cumque ipsam numquam ab assumenda, atque optio perspiciatis
+            eveniet dolorum sunt doloribus! Minus quisquam minima iste? Veniam eos ullam laudantium repellat nisi
+            facilis, facere earum optio quam quod molestiae sed libero dolor mollitia officiis reprehenderit et non? Eos
+            fuga nisi enim recusandae quisquam minima eaque odit magnam, aspernatur repellat quasi quidem? Sunt corrupti
+            nam earum quos maiores placeat eveniet amet et natus dolores excepturi minus eos, praesentium eaque.</p>
+    </scetion>
+    <script>
+        let text = document.getElementById("text");
+        let treeLeft = document.getElementById("tree-left");
+        let treeRight = document.getElementById("tree-right");
+        let gateLeft = document.getElementById("gate-left");
+        let gateRight = document.getElementById("gate-right");
+        // let rightsec = document.getElementById("right-sec");
+        // let leftsec = document.getElementById("left-sec");
+
+        window.addEventListener("scroll", () => {
+            let value = window.scrollY;
+            text.style.marginTop = value * 2.5 + "px";
+            treeLeft.style.left = value * -1.5 + "px";
+            treeRight.style.left = value * 1.5 + "px";
+
+            gateLeft.style.left = value * 0.5 + "px";
+            gateRight.style.left = value * -0.5 + "px";
+
+        });
+
+    </script>
+</body>
+
+</html>

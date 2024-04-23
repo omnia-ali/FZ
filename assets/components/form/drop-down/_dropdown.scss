@@ -1,0 +1,28 @@
+.dropdown {
+  display: flex;
+  align-items: center;
+
+  .dropdown-toggle {
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 13px 0;
+    color: black;
+  }
+  .dropdown-toggle::after {
+    //display: inline-block;
+
+    // content: url('/FZG/assets/Images/icons/down.svg');
+    //border: 0;
+    content: '\f078';
+    font-family: 'Font Awesome 6 Pro';
+    border: 0;
+  }
+
+  .btn:hover,
+  .btn:active {
+    background-color: white;
+    color: black;
+  }
+}

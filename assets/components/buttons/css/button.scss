@@ -1,0 +1,64 @@
+/*************************buttons*************************/
+
+.btn {
+  border-radius: 25px;
+  min-width: 120px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.59px;
+  &:not(.dropdown-toggle) {
+    padding: 15px 10px;
+  }
+
+  &.btn-primary {
+    background: white;
+
+    color: black;
+    border-radius: 25px;
+    min-width: 120px;
+    border-color: #ffffff;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.59px;
+    &:not(.dropdown-toggle) {
+      padding: 15px 10px;
+    }
+    &:hover,
+    &:active,
+    &:checked,
+    &:focus-visible {
+      background: black !important;
+      border-color: black;
+      color: white;
+    }
+  }
+  &.btn-secondary {
+    background-color: black !important;
+
+    color: white;
+    border-radius: 25px;
+    min-width: 120px;
+    border-color: black;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.59px;
+    &:not(.dropdown-toggle) {
+      padding: 15px 10px;
+    }
+    &:hover,
+    &:active,
+    &:checked,
+    &:focus-visible {
+      background: white !important;
+      border-color: white;
+      color: black;
+    }
+  }
+}
+.rounded-circle {
+  border-radius: 50%;
+  background-color: white;
+  // padding: 5px;
+}
